@@ -11,5 +11,14 @@
 	<string>Oz</string>
 	<key>scopeName</key>
 	<string>source.oz</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\b(import|define|local|in|end|fun|if|then|else)\b</string>
+			<key>name</key>
+			<string>keyword</string>
+		</dict>
+	</array>
 </dict>
 </plist>
