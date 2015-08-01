@@ -15,7 +15,7 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>\b(import|define|local|in|end|fun|if|then|else)\b</string>
+			<string>\b(andthen|at|attr|case|catch|choice|class|cond|declare|define|dis|div|do|else|elsecase|elseif|end|export|fail|false|feat|finally|for|from|fun|functor|if|import|in|lazy|local|lock|meth|mod|not|of|or|orelse|prepare|proc|prop|raise|require|self|skip|then|thread|true|try|unit)\b</string>
 			<key>name</key>
 			<string>keyword</string>
 		</dict>
