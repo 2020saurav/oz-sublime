@@ -16,3 +16,11 @@ How to use?
 
 Use Ctrl+B to build and Ctrl+Shift+B to build & run
 
+Sample Code
+-----------
+`functor
+import Browser
+define
+	{Browser.browse 42}
+end`
+
