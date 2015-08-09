@@ -31,8 +31,10 @@ This installation procedures ensures automatic upgrades from the github repo.
 
 
 
-Sample Code
------------
+Sample Codes
+------------
+* Hello World
+
 ```
 functor
 import
@@ -44,6 +46,8 @@ define
 	{Print "Hello World in console"}
 end
 ```
+
+* Scope, function, thread
 
 ```
 functor
@@ -70,3 +74,25 @@ define
 	{Print {Fib 10}}
 end
 ```
+
+* Tail Recursion
+
+```
+ functor
+import
+	System(showInfo:Print)
+define
+	fun {Factorial N}
+		fun {FactorialAux N Product}
+			if N==0
+			then Product
+			else {FactorialAux N-1 N*Product}
+			end
+		end
+	in 
+		{FactorialAux N 1}
+	end
+	{Print {Factorial 5}}
+end
+```
+
