@@ -45,3 +45,28 @@ define
 end
 ```
 
+```
+functor
+import
+	System(showInfo:Print)
+
+define
+	local Factorial in
+		fun {Factorial N}
+			if N==0 then 1 else N*{Factorial N-1} end
+		end
+		{Print {Factorial 5}}
+	end
+	local Test in
+		Test = 42
+		{Print Test}
+	end
+	fun {Fib X}
+		case X
+		of 0 then 1
+		[] 1 then 1
+		else thread {Fib X-1} end + {Fib X-2} end
+	end
+	{Print {Fib 10}}
+end
+```
