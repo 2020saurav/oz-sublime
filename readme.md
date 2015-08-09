@@ -35,9 +35,13 @@ Sample Code
 -----------
 ```
 functor
-import Browser
+import
+	Browser(browse:Browse)
+	System(showInfo:Print)
+
 define
-	{Browser.browse 42}
+	{Browse 42}
+	{Print "Hello World in console"}
 end
 ```
 
