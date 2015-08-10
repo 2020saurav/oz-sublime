@@ -98,3 +98,9 @@ define
 end
 ```
 
+WARNING
+-------
+Closing the browser window does not send a `SIGINT` interrupt signal, so the process `ozwish` and `ozemulator` lives unless explicitly killed. Browser opened from command line can be killed by sending `SIGINT` by Ctrl+C. 
+To make it easy, one may keep alias in .bashrc:
+```alias ozkill='kill -9 `pidof ozemulator` && kill -9 `pidof ozwish`'```
+
