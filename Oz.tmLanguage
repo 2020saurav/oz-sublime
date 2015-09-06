@@ -33,7 +33,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(fun)</string>
+			<string>\b(fun|NewCell)</string>
 			<key>name</key>
 			<string>entity.name.function</string>
 		</dict>
@@ -45,7 +45,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(false|true)</string>
+			<string>\b(false|true|nil)</string>
 			<key>name</key>
 			<string>constant.language</string>
 		</dict>
