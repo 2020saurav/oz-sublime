@@ -3,12 +3,13 @@
 
 	"completions":
 	[
-		{"trigger": "local", "contents": "local $1 in\n\t$2\nend\n$0"},
-		{"trigger": "fun", "contents": "fun {$1}\n\t$2\nend\n$0"},
-		{"trigger": "if", "contents": "if $1 then $2 else $3 end\n$0"},
-		{"trigger": "case", "contents": "case $1\nof $2 then $3\nend\n$0"},
-		{"trigger": "define", "contents": "define\n\t$0\nend\n"},
-		{"trigger": "header", "contents": "functor\nimport\n\tBrowser(browse:Browse)\n"},
+		{"trigger": "local\tTemplate", "contents": "local $1 in\n\t$2\nend\n$0"},
+		{"trigger": "fun\tTemplate", "contents": "fun {$1}\n\t$2\nend\n$0"},
+		{"trigger": "if\tTemplate", "contents": "if $1 then $2 else $3 end\n$0"},
+		{"trigger": "case\tTemplate", "contents": "case $1\nof $2 then $3\nend\n$0"},
+		{"trigger": "define\tTemplate", "contents": "define\n\t$0\nend\n"},
+		{"trigger": "header\tHeader", "contents": "functor\nimport\n\tBrowser(browse:Browse)\n"},
+		{"trigger": "proc\tTemplate", "contents": "proc {$1}\n\t$2\nend\n$0"},
 		"andthen",
 		"at",
 		"attr",
