@@ -37,7 +37,7 @@ Sample Codes
 ------------
 * Hello World
 
-```
+```oz
 functor
 import
 	Browser(browse:Browse)
@@ -51,7 +51,7 @@ end
 
 * Scope, function, thread
 
-```
+```oz
 functor
 import
 	System(showInfo:Print)
@@ -79,7 +79,7 @@ end
 
 * Tail Recursion
 
-```
+```oz
  functor
 import
 	System(showInfo:Print)
@@ -102,5 +102,7 @@ WARNING
 -------
 Closing the browser window does not send a `SIGINT` interrupt signal, so the process `ozwish` and `ozemulator` lives unless explicitly killed. Browser opened from command line can be killed by sending `SIGINT` by Ctrl+C. 
 To make it easy, one may keep alias in .bashrc:
-```alias ozkill='kill -9 `pidof ozemulator` && kill -9 `pidof ozwish`'```
+```shell
+alias ozkill='kill -9 `pidof ozemulator` && kill -9 `pidof ozwish`'
+```
 
